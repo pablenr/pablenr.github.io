@@ -5,10 +5,10 @@
     --nb-accent: #ff3b30;
     --nb-accent-alt: #ffd60a;
     --surface-verde:#3bcabc;
-    --surface-azul:#7492ea;
+    --surface-azul:#2d8fc8;
     --surface-rosa:#bc2a9f;
     --surface-naranja:#FF9F1C;
-    --surface-lima:#C8FA26;
+    --surface-lima:#b2e310;
     --surface-morado:#995ef8;
     --surface-coral:#ee3f3f;
     --surface-crema:#FFF3B0;
@@ -41,7 +41,7 @@ h1, h2, h5, .lead {
     color: var(--nb-ink);
     text-transform: uppercase;
     line-height: 1;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .nombre-recuadro {
@@ -76,7 +76,6 @@ h1, h2, h5, .lead {
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
-    object-position: center 20%;
 }
 
 .flip-face img {
@@ -149,6 +148,7 @@ h1, h2, h5, .lead {
     font-family:"Courier New", monospace;
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     color: var(--nb-ink);
+    margin: 0;
 }
 .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -270,7 +270,7 @@ h1, h2, h5, .lead {
 }
 
 .accordion-item {
-    background-color: var(--surface-crema);
+    background-color: var(--nb-surface);
     border: 3px solid var(--nb-ink);
     color: var(--nb-ink);
     border-radius: 0;
@@ -393,4 +393,86 @@ h1, h2, h5, .lead {
     border-color: var(--nb-ink);
     transform: translate(-2px, -2px);
     box-shadow: 6px 6px 0 var(--nb-ink);
+}
+
+#contactToast {
+    border: 3px solid var(--nb-ink) !important;
+    border-radius: 0 !important;
+    box-shadow: 6px 6px 0 var(--nb-ink) !important;
+    background-color: var(--surface-crema) !important;
+}
+
+#contactToast .toast-header {
+    background-color: var(--nb-accent-alt) !important;
+    border-bottom: 3px solid var(--nb-ink) !important;
+    border-radius: 0 !important;
+    color: var(--nb-ink) !important;
+    font-family: 'Courier New', monospace;
+}
+
+#contactToast .toast-body {
+    font-family: 'Courier New', monospace;
+    color: var(--nb-ink);
+    font-size: 0.9rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+    padding: 12px 0;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--nb-ink);
+    box-shadow: 4px 4px 0 var(--nb-ink);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--nb-ink);
+}
+
+.github {
+    background-color: #333;
+}
+
+.github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+}
+
+.github:hover {
+    background-color: var(--nb-accent-alt);
+}
+
+.github:hover svg {
+    fill: #333;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin svg {
+    fill: #f2f2f2;
+    width: 22px;
+    height: 22px;
+}
+
+.linkedin:hover {
+    background-color: var(--nb-accent-alt);
+}
+
+.linkedin:hover svg {
+    fill: #0077b5;
 }
