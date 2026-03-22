@@ -441,6 +441,11 @@ h1, h2, h5, .lead {
     box-shadow: 6px 6px 0 var(--nb-ink);
 }
 
+.social-button:focus-visible {
+    outline: 3px solid var(--nb-accent-alt);
+    outline-offset: 2px;
+}
+
 .github {
     background-color: #333;
 }
