@@ -305,7 +305,7 @@ h1, h2, h5, .lead {
     --bs-btn-focus-shadow-rgb: 0, 0, 0;
     outline: 3px solid var(--nb-accent-alt);
     outline-offset: 2px;
-    box-shadow: none;
+    box-shadow: 6px 6px 0 var(--nb-ink);
     background-color: var(--surface-verde);
 }
 
@@ -481,3 +481,4 @@ h1, h2, h5, .lead {
 .linkedin:hover svg {
     fill: #0077b5;
 }
+
