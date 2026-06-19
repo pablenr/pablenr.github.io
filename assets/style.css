@@ -12,7 +12,9 @@
     --surface-morado:#995ef8;
     --surface-coral:#ee3f3f;
     --surface-crema:#FFF3B0;
-     --surface-cielo:#1448e6;
+    --surface-cielo:#1448e6;
+    --surface-cian:#06d6a0;
+    --surface-magenta:#c77dff;
 }
 
 body {
@@ -480,5 +482,86 @@ h1, h2, h5, .lead {
 
 .linkedin:hover svg {
     fill: #0077b5;
+}
+
+.badge-llm {
+    background-color: var(--surface-magenta);
+}
+
+.badge-rag {
+    background-color: var(--surface-cian);
+}
+
+.badge-sqli {
+    background-color: var(--surface-coral);
+}
+
+.badge-xss {
+    background-color: var(--surface-naranja);
+}
+
+.badge-nmap {
+    background-color: var(--surface-morado);
+    color: var(--nb-surface);
+}
+
+.badge-html {
+    background-color: var(--surface-lima);
+}
+
+.badge-chromadb {
+    background-color: var(--surface-verde);
+}
+
+.badge-pentesting {
+    background-color: var(--surface-coral);
+}
+
+.badge-owasp {
+    background-color: var(--surface-naranja);
+}
+
+.badge-cvss {
+    background-color: var(--surface-crema);
+}
+
+.badge-networking {
+    background-color: var(--surface-cielo);
+    color: var(--nb-surface);
+}
+
+.badge-security {
+    background-color: var(--surface-rosa);
+    color: var(--nb-surface);
+}
+
+.proyectos-separator {
+    background-color: var(--surface-coral);
+    border: 3px solid var(--nb-ink);
+    box-shadow: 6px 6px 0 var(--nb-ink);
+    padding: 10px 24px;
+    font-family: 'Courier New', monospace;
+    font-weight: 900;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-gh {
+    background-color: #1a1a2e;
+    border: 3px solid var(--nb-ink);
+    color: #f0f0f0;
+    font-weight: 700;
+    box-shadow: 4px 4px 0 var(--nb-ink);
+    border-radius: 0;
+}
+
+.btn-gh:hover {
+    background-color: var(--nb-accent-alt);
+    color: var(--nb-ink);
+    border-color: var(--nb-ink);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--nb-ink);
 }
 

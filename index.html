@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Rojas — Portafolio</title>
+    <title>Pablo Rojas — Ciberseguridad | Portfolio</title>
     <meta name="description"
-        content="Portafolio de Pablo Enrique Rojas Heras, estudiante de Ingeniería Informática especializado en desarrollo web y ciberseguridad.">
+        content="Portfolio de Pablo Enrique Rojas Heras, Ingeniero Informático enfocado en Ciberseguridad. Proyectos de pentesting web, análisis de vulnerabilidades CVE e inteligencia artificial aplicada a seguridad.">
     <link rel="icon" href="assets/img/icono.png" type="image/png">
     <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -38,9 +38,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -48,7 +45,7 @@
 
     <div class="container seccion-contenido py-4">
         <div class="alert alert-warning alert-dismissible fade show text-center pv-2" role="alert">
-            <p class="mb-0">Bievenido a mi Portfolio!! Navega por él para conocerme mejor.</p>
+            <p class="mb-0">Portfolio — Explora mis proyectos, habilidades y formación técnica.</p>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="row align-items-center">
@@ -98,7 +95,55 @@
     <div class="container seccion-contenido py-3" id="proyectos">
         <h2 class="text-center mb-4">Mis Proyectos</h2>
         <div class="row g-4">
-            <!-- Proyecto 1 -->
+            <!-- 1. CVE Intelligence Assistant -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">CVE Intelligence Assistant</h5>
+                        <p class="card-text">Sistema RAG que responde preguntas sobre vulnerabilidades CVE en lenguaje
+                            natural. 494 CVEs reales indexados con ChromaDB y procesados mediante Llama 3.3 70B vía
+                            Groq.</p>
+                        <ul>
+                            <li>Pipeline de búsqueda semántica con embeddings y recuperación vectorial.</li>
+                            <li>Interfaz de consulta accesible sin necesidad de conocimientos técnicos previos.</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <span class="badge project-badge badge-python" aria-label="Tecnología: Python">PYTHON</span>
+                            <span class="badge project-badge badge-rag" aria-label="Técnica: RAG">RAG</span>
+                            <span class="badge project-badge badge-llm" aria-label="Tecnología: LLMs">LLMs</span>
+                            <span class="badge project-badge badge-chromadb" aria-label="Tecnología: ChromaDB">ChromaDB</span>
+                        </div>
+                        <a href="https://github.com/pablenr/cve-intelligence-assistant" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-gh mt-3"
+                            aria-label="Ver CVE Intelligence Assistant en GitHub">Ver en GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. DVWA Security Assessment -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">DVWA Security Assessment</h5>
+                        <p class="card-text">Auditoría completa de seguridad web: SQL Injection y XSS en niveles
+                            Low/Medium/High. Informe profesional de 11 páginas en PDF con clasificación de severidad
+                            CVSS.</p>
+                        <ul>
+                            <li>Script de automatización de ataques en Python para reproducibilidad de pruebas.</li>
+                            <li>Informe en PDF con metodología, evidencias y remediaciones documentadas.</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <span class="badge project-badge badge-python" aria-label="Tecnología: Python">PYTHON</span>
+                            <span class="badge project-badge badge-pentesting" aria-label="Tipo: Pentesting">Pentesting</span>
+                            <span class="badge project-badge badge-owasp" aria-label="Metodología: OWASP">OWASP</span>
+                            <span class="badge project-badge badge-cvss" aria-label="Estándar: CVSS">CVSS</span>
+                        </div>
+                        <a href="https://github.com/pablenr/dvwa-security-assessment" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-gh mt-3"
+                            aria-label="Ver DVWA Security Assessment en GitHub">Ver en GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3. NASA Space Apps Challenge -->
             <div class="col-12 col-md-6">
                 <div class="card h-100">
                     <div class="card-body">
@@ -118,28 +163,31 @@
                     </div>
                 </div>
             </div>
-            <!-- Proyecto 2 -->
+            <!-- 4. Network Security Scanner -->
             <div class="col-12 col-md-6">
                 <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">ERP Hospitalario (Odoo)</h5>
-                        <p class="card-text">Diseño y arquitectura de un sistema de gestión médica. Implementé un modelo
-                            relacional complejo para la
-                            asignación inteligente de citas, vinculando pacientes, doctores y disponibilidad de salas
-                            físicas.</p>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Network Security Scanner</h5>
+                        <p class="card-text">Escáner de red en Python con Nmap: descubre hosts activos, detecta puertos
+                            abiertos, identifica servicios y sistema operativo. Genera informe HTML automático con
+                            datos reales de red doméstica.</p>
                         <ul>
-                            <li>Implementación de RBAC (Control de acceso basado en roles) para diferenciar personal
-                                directivo y sanitario.</li>
-                            <li>Desarrollo de módulos personalizados para la gestión de flujos hospitalarios.</li>
+                            <li>Fingerprinting de OS y versión de servicios expuestos mediante Nmap.</li>
+                            <li>Generación automática de informe HTML con todos los resultados del escaneo.</li>
                         </ul>
-                        <span class="badge project-badge badge-python" aria-label="Tecnología: Python">PYTHON</span>
-                        <span class="badge project-badge badge-xml" aria-label="Tecnología: XML">XML</span>
-                        <span class="badge project-badge badge-postgresql"
-                            aria-label="Tecnología: PostgreSQL">PostgreSQL</span>
+                        <div class="mt-auto">
+                            <span class="badge project-badge badge-python" aria-label="Tecnología: Python">PYTHON</span>
+                            <span class="badge project-badge badge-nmap" aria-label="Herramienta: Nmap">Nmap</span>
+                            <span class="badge project-badge badge-networking" aria-label="Área: Networking">Networking</span>
+                            <span class="badge project-badge badge-security" aria-label="Área: Security">Security</span>
+                        </div>
+                        <a href="https://github.com/pablenr/network-security-scanner" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-gh mt-3"
+                            aria-label="Ver Network Security Scanner en GitHub">Ver en GitHub &rarr;</a>
                     </div>
                 </div>
             </div>
-            <!-- Proyecto 3 -->
+            <!-- 6. QA Automation Suite -->
             <div class="col-12 col-md-6">
                 <div class="card h-100">
                     <div class="card-body">
@@ -147,7 +195,6 @@
                         <p class="card-text">Automatización de pruebas End-to-End (E2E) para plataformas universitarias.
                             Eliminé el testeo manual tedioso mediante scripts escalables que validan flujos críticos
                             (Login, Buzón, Newsfeed).</p>
-
                         <ul>
                             <li>Reducción drástica del tiempo de regresión en actualizaciones de software.</li>
                             <li>Validación de integridad visual y funcional de componentes dinámicos.</li>
@@ -156,26 +203,6 @@
                         <span class="badge project-badge badge-selenium"
                             aria-label="Tecnología: Selenium">Selenium</span>
                         <span class="badge project-badge badge-junit" aria-label="Tecnología: JUnit">JUnit</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Proyecto 4 -->
-            <div class="col-12 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">StudyPlus</h5>
-                        <p class="card-text">Mantenimiento y desarrollo de una plataforma de organización académica bajo
-                            el framework Struts2.
-                            Especial enfoque en la resolución de incidencias de arquitectura y depuración de errores de
-                            carga.</p>
-                        <ul>
-                            <li>Integración de herramientas de productividad (Técnica Pomodoro) mediante JS.</li>
-                            <li>Gestión de la persistencia y lógica de negocio en sistemas heredados.</li>
-                        </ul>
-                        <span class="badge project-badge badge-struts" aria-label="Tecnología: Struts2">Struts2</span>
-                        <span class="badge project-badge badge-javascript"
-                            aria-label="Tecnología: JavaScript">JavaScript</span>
-                        <span class="badge project-badge badge-java" aria-label="Tecnología: Java">Java</span>
                     </div>
                 </div>
             </div>
@@ -188,34 +215,46 @@
             <div class="col-12 col-md-8 mx-auto">
                 <div class="mb-3">
                     <div class="d-flex justify-content-between">
-                        <span>Desarrollo Web & Backend</span>
-                        <span>85%</span>
+                        <span>Desarrollo Backend & Scripting Python</span>
+                        <span>90%</span>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
-                            aria-label="Desarrollo Web y Backend" aria-valuenow="85" aria-valuemin="0"
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
+                            aria-label="Desarrollo Backend y Scripting Python" aria-valuenow="90" aria-valuemin="0"
                             aria-valuemax="100"></div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <div class="d-flex justify-content-between">
-                        <span>Datos e Inteligencia Artificial</span>
-                        <span>55%</span>
+                        <span>IA Aplicada & Análisis de Datos</span>
+                        <span>80%</span>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%"
-                            aria-label="Datos e Inteligencia Artificial" aria-valuenow="55" aria-valuemin="0"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                            aria-label="IA Aplicada y Análisis de Datos" aria-valuenow="80" aria-valuemin="0"
                             aria-valuemax="100"></div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <div class="d-flex justify-content-between">
-                        <span>Ciberseguridad</span>
-                        <span>30%</span>
+                        <span>Ciberseguridad Ofensiva</span>
+                        <span>75%</span>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
-                            aria-label="Ciberseguridad" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                            aria-label="Ciberseguridad Ofensiva" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Seguridad Defensiva & Análisis de Vulnerabilidades</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                            aria-label="Seguridad Defensiva y Análisis de Vulnerabilidades" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -281,41 +320,106 @@
                 <button class="nav-link" id="servicios-tab" data-bs-toggle="tab" data-bs-target="#servicios-tab-pane"
                     type="button" role="tab" aria-controls="servicios-tab-pane" aria-selected="false">Cyber</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="devops-tab" data-bs-toggle="tab" data-bs-target="#devops-tab-pane"
+                    type="button" role="tab" aria-controls="devops-tab-pane" aria-selected="false">DevOps & Tools</button>
+            </li>
         </ul>
         <div class="tab-content p-3 border border-top-0 tab-panel" id="stackTabsContent">
+            <!-- Web & Backend -->
             <div class="tab-pane fade show active" id="frontend-tab-pane" role="tabpanel" aria-labelledby="frontend-tab"
                 tabindex="0">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">HTML<span
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Python <span
                             class="badge text-bg-danger">Avanzado</span></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">CSS <span
-                            class="badge text-bg-warning ">Alto</span></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Bootstrap <span
-                            class="badge text-bg-info ">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">HTML/CSS <span
+                            class="badge text-bg-danger">Avanzado</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Java <span
+                            class="badge text-bg-warning">Alto</span></li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">SQL <span
-                            class="badge text-bg-info ">Medio</span></li>
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">PHP <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">JavaScript <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">FastAPI <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Django <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Laravel <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Bootstrap <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Maven <span
+                            class="badge text-bg-secondary">Básico</span></li>
                 </ul>
             </div>
+            <!-- Datos e Inteligencia -->
             <div class="tab-pane fade" id="backend-tab-pane" role="tabpanel" aria-labelledby="backend-tab" tabindex="0">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Minería de datos <span
-                            class="badge text-bg-warning ">Alto</span></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">IA<span
-                            class="badge text-bg-warning ">Alto</span></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Python <span
-                            class="badge text-bg-warning ">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">scikit-learn <span
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Pandas <span
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">RAG / LLMs <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">ChromaDB <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">NLP <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Matlab-Simulink <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">MongoDB <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">CUDA <span
+                            class="badge text-bg-secondary">Básico</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Qdrant (Vectorial) <span
+                            class="badge text-bg-secondary">Básico</span></li>
                 </ul>
             </div>
+            <!-- Cyber -->
             <div class="tab-pane fade" id="servicios-tab-pane" role="tabpanel" aria-labelledby="servicios-tab"
                 tabindex="0">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Redes & Protocolos
-                        <span class="badge text-bg-info ">Medio</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Fundamentos de
-                        Criptografía <span class="badge text-bg-info ">Medio</span></li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">Entornos Linux &
-                        Windows <span class="badge text-bg-info ">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Nmap <span
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">SQL Injection / XSS <span
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Wireshark / Tshark <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">OWASP / CVSS <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Pentesting Web <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Iptables <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Networking <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Criptografía <span
+                            class="badge text-bg-info">Medio</span></li>
+                </ul>
+            </div>
+            <!-- DevOps & Tools -->
+            <div class="tab-pane fade" id="devops-tab-pane" role="tabpanel" aria-labelledby="devops-tab" tabindex="0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Git / GitHub <span
+                            class="badge text-bg-danger">Avanzado</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Linux (Parrot, Ubuntu) <span
+                            class="badge text-bg-warning">Alto</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Docker <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Bash Scripting <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">VirtualBox <span
+                            class="badge text-bg-info">Medio</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">GitHub Actions <span
+                            class="badge text-bg-secondary">Básico</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">ROS2 <span
+                            class="badge text-bg-secondary">Básico</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Arduino <span
+                            class="badge text-bg-secondary">Básico</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Jenkins <span
+                            class="badge text-bg-secondary">Básico</span></li>
                 </ul>
             </div>
         </div>
@@ -333,13 +437,13 @@
                 </h2>
                 <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Tengo una base técnica sólida como desarrollador que me permite saber exactamente cómo se
-                        construyen las aplicaciones y cómo piensan los programadores. Sin embargo, busco dar el salto
-                        hacia un camino profesional que realmente me llene. En este último tiempo me he dado cuenta de
-                        la importancia crítica que tiene proteger los sistemas informáticos en la sociedad actual. Es un
-                        mundo que me ha atrapado por completo y que estoy estudiando a fondo de manera autodidacta,
-                        porque considero que la mejor forma de defender un sistema es entendiendo primero cómo está
-                        construido por debajo.
+                        Mi background como desarrollador me da algo que pocos juniors en ciberseguridad tienen:
+                        entiendo exactamente cómo se construyen las aplicaciones y por qué son vulnerables. Cuando
+                        analizo un SQL Injection, no solo lo detecto — sé exactamente qué línea del código lo
+                        introduce y cómo debería reescribirse. He auditado aplicaciones web reales (DVWA) con
+                        metodología OWASP, automatizado análisis de vulnerabilidades CVE con IA y construido
+                        herramientas de reconocimiento de red. La ciberseguridad es mi foco profesional, no una
+                        afición lateral.
                     </div>
                 </div>
             </div>
@@ -352,10 +456,12 @@
                 </h2>
                 <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Actualmente estoy cursando mi 4º y último año de Ingeniería Informática. Mi experiencia proviene
-                        de las "trincheras" académicas. He diseñado arquitecturas backend, entrenado modelos de datos y
-                        ahora dedico mi tiempo libre a aprender sobre la ciberseguridad para poder aportar un gran
-                        valor.
+                        No tengo experiencia profesional remunerada en el sector aún, pero mis proyectos son trabajo
+                        real: he realizado auditorías web completas documentadas con severidad CVSS, automatizado el
+                        proceso de explotación con Python e indexado 494 CVEs reales para construir un sistema de
+                        consulta inteligente con LLMs. Estoy cursando mi 4º y último año de Ingeniería Informática
+                        y preparando certificaciones en ciberseguridad ofensiva. Mi objetivo es consolidar este
+                        perfil con un Máster especializado.
                     </div>
                 </div>
             </div>
@@ -368,59 +474,18 @@
                 </h2>
                 <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Busco mi primera oportunidad profesional, ya sea a través de prácticas o en una posición Junior
-                        (Blue/Red Team, Analista de Seguridad o Auditoría). Busco un equipo donde pueda absorber
-                        conocimiento como una esponja y aportar mi mentalidad de ingeniero desde el primer día.
+                        Mi objetivo inmediato es acceder a un <strong>Máster en Ciberseguridad</strong> que estructure
+                        y profundice mi formación técnica. En paralelo, busco mi primera oportunidad profesional como
+                        Junior en Red Team, análisis de vulnerabilidades o auditoría de seguridad — ya sea a través
+                        de prácticas o posición junior. Aporto mentalidad de ingeniero, capacidad de automatización en
+                        Python y proyectos reales que demuestran lo que digo, no solo lo que estudio.
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container seccion-contenido py-3 pb-5 mb-5" id="contacto">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <form id="contactForm" action="https://formspree.io/f/xkoqazng" method="POST"
-                    class="p-3 border rounded form-panel" novalidate>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name"
-                                    placeholder="Tu nombre" required>
-                                <label for="nombre">Nombre</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" name="email" autocomplete="email"
-                                    placeholder="nombre@email.com" required>
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-group">
-                                <span class="input-group-text">Asunto</span>
-                                <input type="text" class="form-control" id="asunto" name="asunto"
-                                    placeholder="_________">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Cuéntame tu idea" id="mensaje"
-                                    name="mensaje" style="height: 140px" required></textarea>
-                                <label for="mensaje">Mensaje</label>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <button type="submit" class="btn btn-danger">Enviar mensaje</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
+    
     <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -444,19 +509,19 @@
                 </div>
                 <div class="modal-body p-4">
                     <p class="mb-3">
-                        Estudiante de 4º de Ingeniería Informática y solucionador de problemas por naturaleza.
-                        Durante la carrera he construido una base técnica sólida: desde el diseño de interfaces
-                        <strong>(HTML, CSS, Bootstrap)</strong>
-                        hasta la lógica pura del Backend, pasando por el mantenimiento de Bases de Datos, la
-                        Inteligencia Artificial y
-                        la Minería de Datos.
+                        Ingeniero Informático (4º año) con base técnica sólida en desarrollo backend, Python,
+                        bases de datos e inteligencia artificial. He construido sistemas desde cero: arquitecturas
+                        Django, modelos relacionales complejos y pipelines RAG con LLMs de última generación.
                         <br><br>
-                        Sin embargo, mi verdadera obsesión actual es un territorio que estoy explorando de lleno por mi
-                        cuenta: <strong>Ciberseguridad</strong>.
-                        Ya no solo me interesa construir sistemas, ahora quiero aprender a protegerlos. Soy un aprendiz
-                        rápido y autodidacta,
-                        buscando mi primera gran oportunidad para aportar valor y crecer dentro de un equipo de
-                        seguridad (Blue/Red Team).
+                        Mi foco es la <strong>Ciberseguridad ofensiva y defensiva</strong>. He completado auditorías
+                        web reales con clasificación CVSS (SQL Injection y XSS), desarrollado un sistema de análisis
+                        inteligente de vulnerabilidades CVE y construido herramientas de reconocimiento de red con
+                        Nmap. No me limito a estudiar conceptos: <strong>construyo las herramientas</strong>.
+                        <br><br>
+                        Mi ventaja diferencial es entender cómo se construyen los sistemas antes de intentar
+                        comprometer su seguridad. Busco acceder a un <strong>Máster en Ciberseguridad</strong>
+                        y mi primera oportunidad en un equipo de Red Team, análisis de vulnerabilidades o
+                        auditoría de seguridad.
                     </p>
                 </div>
             </div>
